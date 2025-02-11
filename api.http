@@ -1,0 +1,30 @@
+GET http://localhost:8080/books
+content-type: application/json
+
+###
+GET http://localhost:8080/books/3
+content-type: application/json
+
+###
+DELETE http://localhost:8080/books/3
+content-type: application/json
+
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960
+}
+
+###
+PUT http://localhost:8080/books/2
+Content-Type: application/json
+
+{
+    "title": "To Kill a Mockingbird Edit",
+    "author": "Harper Lee",
+    "year": 1960
+}
